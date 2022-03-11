@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import { Player, Controls } from '@lottiefiles/react-lottie-player'
-import IconBagMedical from './components/icons/IconBagMedical'
-import IconSettings from './components/icons/IconSettings'
+import IconBagMedical from './../components/icons/IconBagMedical'
+import IconSettings from './../components/icons/IconSettings'
 
 export default function Home() {
 
