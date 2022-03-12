@@ -8,7 +8,7 @@ const IconSettings = {
     fill: {
         white: "#fff",
         black: "#000",
-        none: "none",
+        blue: "#0000FF",
     },
 }
 

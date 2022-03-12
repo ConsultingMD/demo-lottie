@@ -1,36 +1,35 @@
-import Head from 'next/head'
 import { Player, Controls } from '@lottiefiles/react-lottie-player'
 import IconBagMedical from './../components/icons/IconBagMedical'
 import IconSettings from './../components/icons/IconSettings'
+import Header from '../components/header'
+import LottieDemo from './../public/lottie/demo.json'
 
 export default function Home() {
 
   return (
     <div className="container">
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
+		<Header />
       <main>
         <h1 className="title">
-          Welcome to <a href="https://nextjs.org">Lottie!</a>
+          Welcome to <a href="https://airbnb.io/lottie/#/README">Lottie!</a>
         </h1>
+
+		<br />
 
         <Player
           autoplay
           loop
-          src="https://assets3.lottiefiles.com/packages/lf20_UJNc2t.json"
-          style={{ height: '300px', width: '300px' }}
+          src={LottieDemo}
+          style={{ height: '220px', width: '220px' }}
         >
           <Controls visible={false} buttons={['play', 'repeat', 'frame', 'debug']} />
         </Player>
 
-        <IconBagMedical size={IconSettings.size.large} />
+		<br />
+
+        <IconBagMedical size={IconSettings.size.extraLarge} fill={IconSettings.fill.black} />
 
       </main>
-
-  
 
       <style jsx>{`
         .container {
