@@ -29,7 +29,6 @@ export default function Home() {
 		  <br/>
 
 		  {/* SVG as component */}
-		  <h3>SVG Component</h3>
 		  <IconBagMedical size={IconSettings.size.large} fill={IconSettings.fill.black}/>
 
 		</main>
