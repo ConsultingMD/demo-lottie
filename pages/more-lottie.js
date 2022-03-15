@@ -1,7 +1,9 @@
 import Header from '../components/header'
-import ErrorAnimation from './../public/lottie/404-blue.json'
+import ErrorAnimation from './../public/lottie/404.json'
 import EmailAnimation from './../public/lottie/email-successfully-sent.json'
 import FileUploadAnimation from './../public/lottie/file_upload.json'
+import MentalWellbeingAnimation from './../public/lottie/mental-wellbeing.json'
+import SuccessAnimation from './../public/lottie/success.json'
 import { Player } from '@lottiefiles/react-lottie-player'
 import Link from "next/link";
 
@@ -35,13 +37,29 @@ export default function MoreLottie() {
           </Player>
           <br />
 
-          <h3>404 error</h3>
+          <h3>Success Animation</h3>
           <Player
               autoplay
               loop
-              src={ErrorAnimation}>
+              src={SuccessAnimation}>
           </Player>
           <br />
+
+        <h3>Mental Health</h3>
+        <Player
+            autoplay
+            loop
+            src={MentalWellbeingAnimation}>
+        </Player>
+        <br />
+
+        <h3>404 error</h3>
+        <Player
+            autoplay
+            loop
+            src={ErrorAnimation}>
+        </Player>
+        <br />
 
       </main>
 
