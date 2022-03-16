@@ -22,14 +22,13 @@ export default function Home() {
 		  <Player
 			  autoplay
 			  loop
-			  src={LottieDemo}
-			  style={{height: '220px', width: '220px'}}>
+			  src={LottieDemo}>
 		  </Player>
 
 		  <br/>
 
 		  {/* SVG as component */}
-		  <IconBagMedical size={IconSettings.size.large} fill={IconSettings.fill.black}/>
+		  <IconBagMedical size={IconSettings.size.large} fill={IconSettings.fill.black} />
 
 		</main>
 
