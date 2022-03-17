@@ -1,8 +1,8 @@
 import Header from '../components/header'
 import IconBagMedical from './../components/icons/IconBagMedical'
 import IconSettings from '../components/icons/defaultSettings'
-import LottieDemo from './../public/lottie/demo.json'
-import {Player} from '@lottiefiles/react-lottie-player'
+import LottieDemo from './../public/lottie/anatomy.json'
+import { Player } from '@lottiefiles/react-lottie-player'
 import Link from 'next/link'
 
 export default function Home() {
