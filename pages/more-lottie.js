@@ -1,38 +1,69 @@
 import Header from '../components/header'
-import IconBagMedical from './../components/icons/IconBagMedical'
-import IconSettings from '../components/icons/defaultSettings'
-import LottieDemo from './../public/lottie/anatomy.json'
+import ErrorAnimation from './../public/lottie/404.json'
+import EmailAnimation from './../public/lottie/email-successfully-sent.json'
+import FileUploadAnimation from './../public/lottie/file_upload.json'
+import MentalWellbeingAnimation from './../public/lottie/mental-wellbeing.json'
+import SuccessAnimation from './../public/lottie/success.json'
 import { Player } from '@lottiefiles/react-lottie-player'
-import Link from 'next/link'
+import Link from "next/link";
 
-export default function Home() {
+export default function MoreLottie() {
 
   return (
-	  <div className="container">
-		<Header/>
-		<main>
-		  <h1 className="title">
-			Welcome to <a href="https://airbnb.io/lottie/#/README">Lottie!</a>
-		  </h1>
-		  <Link href="/more-lottie">
-			Some better examples
-		  </Link><br/>
+    <div className="container">
+		<Header />
+      <main>
+        <h1 className="title">
+         More Lottie
+        </h1><br />
+          <Link href="/">
+              Back home
+          </Link><br />
 
-		  {/* Lottie Player */}
-		  <Player
-			  autoplay
-			  loop
-			  src={LottieDemo}>
-		  </Player>
+        {/* Lottie Player */}
+          <h3>Email Sent Animation</h3>
+        <Player
+          autoplay
+          loop
+          src={EmailAnimation}>
+        </Player>
+          <br />
 
-		  <br/>
+          <h3>File Upload Animation</h3>
+          <Player
+              autoplay
+              loop
+              src={FileUploadAnimation}>
+          </Player>
+          <br />
 
-		  {/* SVG as component */}
-		  <IconBagMedical size={IconSettings.size.large} fill={IconSettings.fill.black} />
+          <h3>Success Animation</h3>
+          <Player
+              autoplay
+              loop
+              src={SuccessAnimation}>
+          </Player>
+          <br />
 
-		</main>
+        <h3>Mental Health</h3>
+        <Player
+            autoplay
+            loop
+            src={MentalWellbeingAnimation}>
+        </Player>
+        <br />
 
-		<style jsx>{`
+        <h3>404 error</h3>
+        <Player
+            autoplay
+            loop
+            src={ErrorAnimation}>
+        </Player>
+        <br />
+
+      </main>
+
+      <style jsx>{`
         .container {
           min-height: 100vh;
           padding: 0 0.5rem;
@@ -163,7 +194,7 @@ export default function Home() {
         }
       `}</style>
 
-		<style jsx global>{`
+      <style jsx global>{`
         html,
         body {
           padding: 0;
@@ -178,6 +209,6 @@ export default function Home() {
           box-sizing: border-box;
         }
       `}</style>
-	  </div>
+    </div>
   )
 }
